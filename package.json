@@ -22,5 +22,18 @@
     "@babel/core": "^7.8.6",
     "babel-preset-expo": "~8.1.0"
   },
-  "private": true
+  "private": true,
+  "name": "react-native-tutorial",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdoom/react-native-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdoom/react-native-tutorial/issues"
+  },
+  "homepage": "https://github.com/imdoom/react-native-tutorial#readme",
+  "description": ""
 }
