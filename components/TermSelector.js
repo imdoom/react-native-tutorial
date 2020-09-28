@@ -5,7 +5,7 @@ const TermButton = ({term, isActive, setSelectedTerm}) => (
   <TouchableOpacity style = {styles[isActive ? 'termButtonActive' : 'termButton']}
                     onPress = {() => setSelectedTerm(term)}>
       <Text style={styles.termText}>{term}</Text>
-    </TouchableOpacity>
+  </TouchableOpacity>
   );
 
   const TermSelector = ({selectedTerm, terms, setSelectedTerm}) => (
