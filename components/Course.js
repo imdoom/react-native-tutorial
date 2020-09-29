@@ -6,7 +6,7 @@ const getCourseNumber = course => (
   );
 
 const Course = ({ key, course, isDisabled, isSelected, select}) => (
-    <TouchableOpacity style={ styles[isSelected ? 'courseButtonSelected' : isDisabled ? 'courseButtonDisabled' : 'courseButton'] } 
+    <TouchableOpacity style={ styles[isDisabled ? 'courseButtonDisabled' : (isSelected? 'courseButtonSelected' : 'courseButtonUnselected')] } 
                       onPress = {() => {if (!isDisabled)  select(course); }}>
       <Text style={styles.courseText}>
         {`CS ${getCourseNumber(course)}\n${course.meets}`}
