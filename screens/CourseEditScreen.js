@@ -22,14 +22,14 @@ const CourseEditScreen = ({navigation, route}) => {
     return (
         <SafeAreaView style={styles.container}>
           <ScrollView>
-            <Form>
-              initialValues={
-              {
+            <Form
+              initialValues={{
                 id: course.id,
                 meets: course.meets,
                 title: course.title,
-              }
-              }
+              }}
+              validationSchema={validationSchema}
+            >
               <Form.Field
                 name="id"
                 leftIcon="identifier"
@@ -47,8 +47,7 @@ const CourseEditScreen = ({navigation, route}) => {
                 name="title"
                 leftIcon="format-title"
                 placeholder="Introduction to programming"
-              />
-              validationSchema={validationSchema}
+              />              
             </Form>
           </ScrollView>
         </SafeAreaView>
